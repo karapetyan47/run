@@ -1,0 +1,15 @@
+@import './varriables.scss';
+@import './mixins';
+@import './base';
+@import './fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'SFUIText', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,15 @@
+.button {
+  border-radius: 36px;
+  border: solid 3px #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  &.btn-large {
+    padding: 20px 34px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &.btn {
+    padding: 14px 124.4px;
+  }
+}

@@ -1,0 +1,11 @@
+export const ATTEMPT_GET_JOGS = 'ATTEMPT_GET_JOGS';
+export const GET_JOGS_SUCCESS = 'GET_JOGS_SUCCESS';
+export const GET_JOGS_FAIL = 'GET_JOGS_FAIL';
+
+export const SET_FILTER_VISIBLE = 'SET_FILTER_VISIBLE';
+export const SET_DATE_TO = 'SET_DATE_TO';
+export const SET_DATE_FROM = 'SET_DATE_FROM';
+
+export const ATTEMPT_ADD_JOG = 'ATTEMPT_ADD_JOG';
+export const ADD_JOG_SUCCESS = 'ADD_JOG_SUCCESS';
+export const ADD_JOG_FAIL = 'ADD_JOG_FAIL';

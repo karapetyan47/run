@@ -1,0 +1,20 @@
+@import '../../styles/varriables.scss';
+
+.header {
+  background-color: $green;
+  height: 114px;
+  padding: 30px 0px 30px 37px;
+  .logo {
+    &-image {
+      width: 147px;
+      height: 56px;
+    }
+  }
+  @media (max-width: 576px) {
+    height: 77pt;
+    .logo-image {
+      width: 98pt;
+      height: 37pt;
+    }
+  }
+}

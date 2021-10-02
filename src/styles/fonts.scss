@@ -1,0 +1,27 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'SFUIText';
+  font-style: normal;
+  src: local('SFUIText'), url('./fonts/SFUIText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'SFUIText';
+  font-style: normal;
+  src: local('SFUIText'), url('./fonts/SFUIText-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'SFUIText';
+  font-style: normal;
+  src: local('SFUIText'), url('./fonts/SFUIText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'SFUIText';
+  font-style: normal;
+  src: local('SFUIText'), url('./fonts/SFUIText-Bold.ttf') format('truetype');
+}

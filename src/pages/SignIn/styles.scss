@@ -1,0 +1,31 @@
+@import '../../styles/varriables.scss';
+
+.login {
+  height: calc(100vh - 114px);
+  &-content {
+    padding: 77px 171px 36px;
+    background-color: $purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 44px;
+    .image {
+      margin-bottom: 56px;
+    }
+
+    @media (max-width: 576px) {
+      .image {
+        margin-bottom: 103pt;
+      }
+      .let-me-btn {
+        border-color: $purple;
+        color: $purple;
+      }
+      padding: 0;
+      background: transparent;
+    }
+  }
+  @media (max-width: 576px) {
+    height: calc(100vh - 77pt);
+  }
+}

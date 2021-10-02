@@ -1,0 +1,45 @@
+.jog {
+  margin-bottom: 78px;
+  width: 250px;
+
+  & > img {
+    width: 87px;
+    height: 87px;
+    margin-right: 46px;
+  }
+  .date-item-wrapper {
+    .date {
+      color: #9d9494;
+      font-size: 14px;
+    }
+    margin-bottom: 9px;
+  }
+
+  .info {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    &-item {
+      font-weight: 500;
+      color: #242424;
+      font-size: 14px;
+    }
+    &-val {
+      color: #6c6c6c;
+      margin-left: 4px;
+    }
+    .info-item-wrapper {
+      margin-bottom: 12px;
+    }
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    margin-bottom: 45.6pt;
+    padding-bottom: 45.4pt;
+    & > img {
+      margin-left: 25%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.navbar {
+  .nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 45px;
+    font-weight: bold;
+  }
+  .nav-item-active {
+    position: relative;
+    &::after {
+      position: absolute;
+      width: calc(100% + 1.8px);
+      height: 2px;
+      content: '';
+      background: #ffffff;
+      bottom: -4px;
+      left: -0.9px;
+    }
+  }
+  .filter {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    .nav-item {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.sub-header {
+  height: 60px;
+  background: #eaeaea;
+  .react-datepicker-wrapper {
+    width: auto;
+  }
+  .picker {
+    border-radius: 11px;
+    border: solid 1px #979797;
+    background: #ffffff;
+    width: 100px;
+    height: 31px;
+  }
+  .picker-label {
+    color: #838383;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+}
