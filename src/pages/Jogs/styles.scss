@@ -23,5 +23,9 @@
 
   @media (max-width: 576px) {
     height: calc(100vh - 77pt);
+    .add-icon {
+      width: 47px;
+      height: 47px;
+    }
   }
 }
