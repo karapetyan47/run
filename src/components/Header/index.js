@@ -8,8 +8,8 @@ import './styles.scss';
 const Header = () => {
   const isAuthenticated = useUserAuth();
   return (
-    <div className="header d-flex align-center justify-between">
-      <div className="logo">
+    <div className="header d-flex align-center justify-between" data-testid="header">
+      <div className="logo" data-testid="logo">
         <img className="logo-image" src={LOGO} alt="logo" />
       </div>
       {isAuthenticated && <NavBar />}
