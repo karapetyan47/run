@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 
@@ -12,6 +12,7 @@ import routes from '../../routes/routesCode';
 import { attemptAddJog } from '../../store/jogs/actions';
 
 const AddJog = () => {
+  const addJogLoading = useSelector((state) => state.jogs.addJogLoading);
   const dispatch = useDispatch();
   const {
     register,
@@ -57,7 +58,7 @@ const AddJog = () => {
             <Input type="date" {...register('date', { required: true })} id="date" name="date" />
             {errors?.date?.type === 'required' && <label className="error">Date is required</label>}
           </div>
-          <Button className="w-full" type="submit">
+          <Button disabled={addJogLoading} className="w-full" type="submit">
             Save
           </Button>
         </form>

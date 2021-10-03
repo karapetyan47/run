@@ -13,6 +13,10 @@
       margin-bottom: 56px;
     }
 
+    .img-loading {
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+
     @media (max-width: 576px) {
       .image {
         margin-bottom: 103pt;
@@ -27,5 +31,17 @@
   }
   @media (max-width: 576px) {
     height: calc(100vh - 77pt);
+  }
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
   }
 }

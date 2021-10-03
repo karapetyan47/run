@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { attemptLogin } from '../../store/user/actions';
 
 const SignIn = () => {
-  const { userLoading } = useSelector((state) => state.user.userLoading);
+  const userLoading = useSelector((state) => state.user.userLoading);
   const logo = useLogo(LOGO, MOBILE_LOGO);
 
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const SignIn = () => {
   return (
     <div className="d-flex align-center justify-center login">
       <div className="login-content">
-        <img src={logo} alt="logo" className="image" />
+        <img src={logo} alt="logo" className={`image ${userLoading ? 'img-loading' : ''}`} />
         <Button
           disabled={userLoading}
           onClick={() => {
