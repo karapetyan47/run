@@ -34,7 +34,7 @@ const NavBar = () => {
             dispatch(setFilterVisible(!filterVisible));
           }
         }}
-        className="filter cursor-pointer mr-30">
+        className={`filter cursor-pointer mr-30 ${location.pathname !== '/' ? 'resp-filter' : ''}`}>
         <img src={filterVisible ? ACTIVE_FILTER : FILTER} alt="Filter Icon" />
       </div>
       <img
