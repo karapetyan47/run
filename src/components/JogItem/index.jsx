@@ -4,9 +4,9 @@ import RUNNER from '../../assets/img/runner.svg';
 
 import './styles.scss';
 
-const JogItem = ({ date, speed, distance, time }) => {
+const JogItem = ({ date, speed = '-', distance, time }) => {
   return (
-    <div className="d-flex align-center justify-center jog">
+    <div className="d-flex align-center justify-center jog" data-testid="jog">
       <div className="d-flex justify-between jog-content">
         <img src={RUNNER} alt="runner icon" />
         <div className="d-flex info">
